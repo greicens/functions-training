@@ -76,21 +76,18 @@ function printTriangle(length) {
 }
 
 
+function printPyramid(length){
+  for (var i = 1; i <= length; i++) {
+    var pyramid = "";
 
-function printPyramid(length) {
-  for(var i = 1; i <= length; i++) {
-	   var pyramid = '';
+    for (var j = length - i; j > 0; j--) {
+      pyramid += " ";
+    }
 
-     for(var j = length - i; j > 0; j--) {
-       pyramid += ' ';
-     }
+    for (var k = 0; k < i; k++){
+      pyramid += "* ";
+    }
 
-     for(var k = 0; k < i; k++) {
-       pyramid += '* ';
-		 }
-
-		 console.log(pyramid);
-	}
+    console.log(pyramid);
+  }
 }
-
-printPyramid(5)
